@@ -5,27 +5,15 @@ html {
     min-height: 100%;
 }
 
-main{
-    margin-bottom: 82px;
-}
-
-// ...Style du Footer...
-
 footer.footer {
     padding: 15px;
     position:absolute;
     bottom:0;
     width: 100%;
+    h3{
+        text:small;
+    }
 }
-
-footer h3{
-    font-size: 16px;
-}
-
-footer a:hover{
-        color:#584832 !important;
-}
-
 
 // ...Style du burger...
 .navbar-toggler-icon {

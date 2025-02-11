@@ -41,11 +41,6 @@ p{
   box-shadow: none;
 }
 
-.navbar button:hover{
-    background-color: #584832 !important;
-    color: white !important;
-}
-
 // ...Style du Heroscene...
 
 .hero-scene{
@@ -57,9 +52,10 @@ p{
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(../images/HerosceneGDsize.jpg);
+        background-image: url(../images/Heroscene.jpg);
         background-size: cover;
-        filter: brightness(0.4);
+        padding-top: 400px;
+        filter: brightness(0.3);
     }
 
     *{

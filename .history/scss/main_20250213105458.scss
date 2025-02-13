@@ -90,9 +90,8 @@ p{
 .lescovoiturages{
     a{
         display: block;
-        color: white;
-        text-decoration: none;
+        color: $black;
         padding: 10px;
-        background-color: $dark;
+        background-color: $bg-dark;
     }
 }

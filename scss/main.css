@@ -12046,4 +12046,12 @@ p {
 
 .form-label {
   color: #006600;
+}
+
+.lescovoiturages a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #584832;
 }/*# sourceMappingURL=main.css.map */

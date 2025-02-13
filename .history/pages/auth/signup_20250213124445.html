@@ -9,37 +9,25 @@
     <form class="p-4">
         <div class="mb-3">
             <label for="PseudoInput" class="form-label">Nom d'utilisateur</label>
-            <input type="text" class="form-control" id="PseudoInput" placeholder="Votre Pseudo" name="Pseudo">
-            <div class="invalid-feedback">
-                Veuillez entrer un pseudo valide            
-            </div> 
+            <input type="text" class="form-control" id="PseudoInput" placeholder="Votre Pseudo" name="Pseudo"> 
         </div>
         <div class="mb-3">
           <label for="EmailInput" class="form-label">Email</label>
-          <input type="email" class="form-control" id="EmailInput" placeholder="example@mail.fr" name="Email">
-          <div class="invalid-feedback">
-            Veuillez entrer un email valide            
-          </div>
+          <input type="email" class="form-control" id="EmailInput" placeholder="example@mail.fr" name="Email"> 
         </div>
         <div class="mb-3">
           <label for="PasswordInput" class="form-label">Mot de passe</label>
           <input type="password" class="form-control" id="PasswordInput" name="Password" aria-describedby="passwordHelpBlock">
-          <div class="valid-feedback">
-            Le mot de passe est robuste
-          </div>
           <div class="invalid-feedback">
-            Assurez-vous que votre mot de passe ait entre 8 et 20 caractères, avec des minuscules, au moins une majuscule, un chiffre et un caractère spécial.            
+            Pour votre sécurité, entrez un mot de passe valide
           </div>
           <div id="passwordHelpBlock" class="form-text">
-            Pour votre sécurité, entrez un mot de passe robuste
+            Assurez-vous que votre mot de passe ait entre 8 et 20 caractères, avec des minuscules, au moins une majuscule, un chiffre et un caractère spécial. 
           </div>
         </div>
         <div class="mb-3">
-            <label for="ValidatePasswordInput" class="form-label">Confirmez votre mot de passe</label>
+            <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
             <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
-            <div class="invalid-feedback">
-                Les mots de passe ne sont pas identiques !            
-            </div>
           </div>
         <div class="text-center">
             <button type="submit" class="btn btn-secondary" aria-describedby="signupHelpBlock" id="btn-valider-inscription">Inscription</button>

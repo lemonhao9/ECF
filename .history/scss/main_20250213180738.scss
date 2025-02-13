@@ -27,7 +27,7 @@ footer h3{
 }
 
 footer a:hover{
-        color:$dark !important;
+        color:#584832 !important;
 }
 
 p{
@@ -35,19 +35,9 @@ p{
     font-size: 18px;
 }
 
-.joinBtn:hover{
+.joinBtn:hover, .covoitBtn:hover{
     background-color: $dark;
     color: white !important;
-}
-
-.covoitBtn:hover{
-    background-color: $primary;
-    color: white;
-}
-
-.voirCovBtn:hover{
-    color: white;
-    background-color: $primary;
 }
 
 // ...Style du burger...
@@ -62,12 +52,12 @@ p{
 }
 
 .navbar button:hover{
-    background-color: $black !important;
+    background-color: $dark !important;
     color: white !important;
 }
 
 .navbar a:hover{
-    background-color: $black;
+    background-color: $dark;
     color: white !important;
     border-radius: 8px;
 }

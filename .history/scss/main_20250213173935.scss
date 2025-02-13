@@ -27,29 +27,13 @@ footer h3{
 }
 
 footer a:hover{
-        color:$dark !important;
+        color:#584832 !important;
 }
 
 p{
     font-family: $font-family-serif;
     font-size: 18px;
 }
-
-.joinBtn:hover{
-    background-color: $dark;
-    color: white !important;
-}
-
-.covoitBtn:hover{
-    background-color: $primary;
-    color: white;
-}
-
-.voirCovBtn:hover{
-    color: white;
-    background-color: $primary;
-}
-
 // ...Style du burger...
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 193, 7, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -62,14 +46,13 @@ p{
 }
 
 .navbar button:hover{
-    background-color: $black !important;
+    background-color: $dark !important;
     color: white !important;
 }
 
-.navbar a:hover{
-    background-color: $black;
-    color: white !important;
-    border-radius: 8px;
+.signout-btn:hover{
+    background-color: none !important;
+    color: $dark
 }
 
 // ...Style du Heroscene...

@@ -112,7 +112,7 @@ function showAndHideElementsForRoles(){
                 }
                 break;
                 case 'user':
-                    if(!userConnected || role == "admin" || role == "employee"){
+                    if(!userConnected && role == "driver" || role == "passenger" ||role == "passengerDriver"){
                         element.classList.add("d-none")
                     }
                     break;

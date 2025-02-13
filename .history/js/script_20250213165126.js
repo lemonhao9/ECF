@@ -57,14 +57,20 @@ function isConnected(){
     }
 }
 
+if(isConnected()){
+    alert("Vous êtes connecté à votre compte EcoRide");
+}
+else{
+    alert("Vous n'êtes pas connecté à votre compte EcoRide");
+}
+
 /*
-disconnected (visiteur)
+disconnected
 connected (admin ou employé ou utilisateur)
             -admin
-            -employee
-            -conducteur 
-            -passager conducteur
-            -passenger
+            -employé
+            -chauffeur ou passager chauffeur
+            -passager
 */
 
 function showAndHideElementsForRoles(){
@@ -76,39 +82,12 @@ function showAndHideElementsForRoles(){
     allElementsToEdit.forEach(element =>{
         switch(element.dataset.show){
             case 'disconnected':
-                if(userConnected){
-                    element.classList.add("d-none")
-                }
                 break;
-            case 'connected':
-                if(!userConnected){
-                    element.classList.add("d-none")
-                }
+            case 'disconnected':
                     break;
-            case 'admin':
-                if(!userConnected || role != "admin"){
-                    element.classList.add("d-none")
-                }
+            case 'disconnected':
                 break;
-            case 'employee':
-                if(!userConnected || role != "employee"){
-                    element.classList.add("d-none")
-                }
-                break;
-            case 'driver':
-                if(!userConnected || role != "driver"){
-                    element.classList.add("d-none")
-                }
-                    break;
-            case 'passengerDriver':
-                if(!userConnected  || role != "passengerDriver"){
-                    element.classList.add("d-none")
-                }
-                        break;
-            case 'passenger':
-                if(!userConnected){
-                    element.classList.add("d-none")
-                }
+            case 'disconnected':
                 break;
         }
     })

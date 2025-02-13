@@ -57,6 +57,13 @@ function isConnected(){
     }
 }
 
+if(isConnected()){
+    alert("Vous êtes connecté à votre compte EcoRide");
+}
+else{
+    alert("Vous n'êtes pas connecté à votre compte EcoRide");
+}
+
 /*
 disconnected (visiteur)
 connected (admin ou employé ou utilisateur)
@@ -76,39 +83,18 @@ function showAndHideElementsForRoles(){
     allElementsToEdit.forEach(element =>{
         switch(element.dataset.show){
             case 'disconnected':
-                if(userConnected){
-                    element.classList.add("d-none")
-                }
                 break;
             case 'connected':
-                if(!userConnected){
-                    element.classList.add("d-none")
-                }
                     break;
             case 'admin':
-                if(!userConnected || role != "admin"){
-                    element.classList.add("d-none")
-                }
                 break;
             case 'employee':
-                if(!userConnected || role != "employee"){
-                    element.classList.add("d-none")
-                }
                 break;
             case 'driver':
-                if(!userConnected || role != "driver"){
-                    element.classList.add("d-none")
-                }
                     break;
             case 'passengerDriver':
-                if(!userConnected  || role != "passengerDriver"){
-                    element.classList.add("d-none")
-                }
                         break;
             case 'passenger':
-                if(!userConnected){
-                    element.classList.add("d-none")
-                }
                 break;
         }
     })

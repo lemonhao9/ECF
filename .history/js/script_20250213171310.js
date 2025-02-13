@@ -57,6 +57,13 @@ function isConnected(){
     }
 }
 
+if(isConnected()){
+    alert("Vous êtes connecté à votre compte EcoRide");
+}
+else{
+    alert("Vous n'êtes pas connecté à votre compte EcoRide");
+}
+
 /*
 disconnected (visiteur)
 connected (admin ou employé ou utilisateur)

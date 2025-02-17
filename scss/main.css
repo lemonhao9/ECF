@@ -12036,6 +12036,10 @@ p {
   border-radius: 8px;
 }
 
+#prixInput {
+  max-width: 75px;
+}
+
 .hero-scene {
   position: relative;
 }

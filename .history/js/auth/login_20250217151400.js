@@ -13,7 +13,7 @@ function checkCredentials(){
         setToken(token)
         //Placer token en cookie
 
-        setCookie(RoleCookieName, "driver", 1)
+        setCookie(RoleCookieName, "user", 1)
 
         window.location.replace("/")
     }

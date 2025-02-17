@@ -5,7 +5,7 @@
     </div>
 </div>
 
-<div class="container pt-3 mt-2 mb-2 col-md-6 col-lg-4" data-show="driver passengerDriver">
+<div class="container p-4  mt-4 mb-4 col-md-6 col-lg-4" data-show="driver passengerDriver">
     <div class="card text-center bg-dark text-light row justify-content-center mb-5">
         <div>
             <h2 class="text-secondary pt-3">Mes informations</h2>
@@ -15,19 +15,19 @@
                 <div class="p-4">
                     <div class="mb-3 ms-5 d-flex align-items-center justify-content-start">
                         <label for="vehiculeInput" class="form-label text-light me-3">Véhicule :</label>
-                        <input type="text" class="form-control w-auto me-3" id="vehiculeInput" readonly>
+                        <input type="text" class="form-control w-25 me-3" id="vehiculeInput" readonly>
                     </div>
                     <div class="mb-3 ms-5 me-3 d-flex align-items-center justify-content-start">
                         <label for="plaqueInput" class="form-label text-light">Plaque d'immatriculation :</label>
-                        <input type="text" class="form-control w-auto ms-3" id="plaqueInput" placeholder="AA-229-AA" readonly>
+                        <input type="text" class="form-control w-25 ms-3" id="plaqueInput" placeholder="AA-229-AA" readonly>
                     </div>
                     <div class="mb-3 ms-5 d-flex align-items-center justify-content-start">
                         <label for="dateImmatInput" class="form-label text-light">Date de première immatriculation :</label>
-                        <input type="date" class="form-control w-auto ms-3" id="dateImmatInput" readonly>
+                        <input type="date" class="form-control w-25 ms-3" id="dateImmatInput" readonly>
                     </div>
                     <div class="mb-3 ms-5 d-flex align-items-center justify-content-start">
                         <label for="placesDispInput" class="form-label text-light">Nombre de places disponibles :</label>
-                        <input type="number" class="form-control w-auto ms-3" id="placesDispInput" min="1" max="5" readonly>
+                        <input type="number" class="form-control w-25 ms-3" id="placesDispInput" min="1" max="5" readonly>
                     </div>
                 </div>
                     <div>
@@ -35,11 +35,11 @@
                     </div>
                     <div class="mb-3 d-flex align-items-center justify-content-center">
                         <label for="fumeursInput" class="form-check-label">Fumeurs :</label>
-                        <input type="text" class="form-control w-auto ms-3" id="fumeursInput" readonly>    
+                        <input type="text" class="form-control w-25 ms-3" id="fumeursInput" readonly>    
                     </div>
                     <div class="mb-3 d-flex align-items-center justify-content-center">
                         <label for="animauxInput" class="form-check-label">Animaux :</label>
-                        <input type="text" class="form-control w-auto ms-3" id="animauxInput" readonly>
+                        <input type="text" class="form-control w-25 ms-3" id="animauxInput" readonly>
                     </div>
                     <p class="text-secondary">Autres :</p>
                     <div class="mb-3">
@@ -58,47 +58,26 @@
         </div>
     </div>
 </div>
-<div class="container p-4 mb-4 col-md-6 col-lg-4" data-show="driver  passengerDriver">
+<div class="container p-4  mt-4 mb-4 col-md-6 col-lg-4" data-show="driver  passengerDriver">
     <div  class="card text-center bg-dark text-light row justify-content-center mb-5">
         <h2 class="text-secondary pt-3"> Proposer un voyage</h2>
         <form>
-            <div class="mb-3  d-flex align-items-center justify-content-center">
+            <div class="mb-3 d-flex align-items-center justify-content-center">
                 <label for="departInfoInput" class="form-label text-light">Départ :</label>
-                <input type="text" class="form-control w-auto ms-3" id="departInfoInput">
+                <input type="text" class="form-control w-25 ms-3" id="departInfoInput">
             </div>
             <div class="mb-3 d-flex align-items-center justify-content-center">
                 <label for="arriveeInfoInput" class="form-label text-light">Arrivée :</label>
-                <input type="text" class="form-control w-auto ms-3" id="arriveeInfoInput">
+                <input type="text" class="form-control w-25 ms-3" id="arriveeInfoInput">
             </div>
-            <div class="mb-3 d-flex align-items-center justify-content-center">
+            <div class="mb-3 ms-5 d-flex align-items-center justify-content-start">
                 <label for="dateDepartInput" class="form-label text-light">Quand partir :</label>
-                <input type="date"class="form-control w-auto ms-3" id="dateDepartInput">
-                <input type="time"class="form-control w-auto ms-3" id="dateDepartInput">
+                <input type="date"class="form-control w-25 ms-3" id="dateDepartInput">
+                <input type="time"class="form-control w-15 ms-3" id="dateDepartInput">
             </div>
-            <div class="mb-3 d-flex align-items-center justify-content-center">
-                <label for="placeDispoInput" class="form-label text-light">Nombre de place disponnible :</label>
-                <input type="number" class="form-control w-auto ms-3" id="placeDispoInput" min="1" max="5">
-            </div>
-            <div class="mb-2 d-flex align-items-center justify-content-center">
-                <label for="prixInput" class="form-label text-light">Prix du covoiturage :</label>
-                <input type="number" class="form-control ms-3" id="prixInput" min="2" aria-describedby="creditsInfo">
-                
-            </div>
-            <div id="creditsInfo"class="form-text text-light w-auto pb-3"><small>À considérer que 2 crédits <br> sont pour EcoRide afin de garantir les maintenances</small>
-                </div>
         </form>
-        <div class="pb-3">
-            <button class="btn btn-secondary ">Publier mon voyage</button>
-        </div>
     </div>
 </div>
-
-<aside>
-    <div>
-        <img src="" alt="Photo de profil">
-        <a href="">Historique des covoiturages</a>
-    </div>
-</aside>
 
 <!--La modal-->
 <div class="modal fade" id="editmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

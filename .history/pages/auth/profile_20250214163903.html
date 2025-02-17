@@ -1,0 +1,105 @@
+<div class="hero-scene text-center text-secondary">
+    <div class="hero-scene-content">
+        <h1>Mon profil</h1>
+        <p>Partagez la route, Préservez la planète</p>
+    </div>
+</div>
+
+<div class="container p-4 mt-4 mb-4 col-md-6 col-lg-4">
+    <div class="card text-center bg-dark text-light row justify-content-center ">
+        <div>
+            <h2 class="text-secondary pt-3">Mes informations</h2>
+        </div>
+        <div>
+            <div>
+                <form>
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <label for="vehiculeInput" class="form-label text-light me-3">Véhicule :</label>
+                        <input type="text" class="form-control w-50 me-3" id="vehiculeInput" readonly>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <label for="plaqueInput" class="form-label text-light">Plaque d'immatriculation :</label>
+                        <input type="text" class="form-control w-25 ms-3" id="plaqueInput" readonly>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <label for="dateImmatInput" class="form-label text-light">Date de première immatriculation :</label>
+                        <input type="date" class="form-control w-25 ms-3" id="dateImmatInput" readonly>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <label for="placesDispInput" class="form-label text-light">Nombre de places disponnibles :</label>
+                        <input type="number" class="form-control w-25 ms-3" id="placesDispInput" min="1" max="5" readonly>
+                    </div>
+                    <div>
+                        <h3 class="text-secondary">Mes préférences</h3>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fumeursInput" class="form-check-label">Fumeurs :</label>
+                        <select name="fumeurs" id="fumeursInput">
+                            <option value="smokeAuthorised">Autorisés</option>
+                            <option value="smokeBanned" >Non autorisés</option>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="animauxInput" class="form-check-label">Animaux :</label>
+                        <select name="animaux" id="animauxInput">
+                            <option value="anxAuthorised">Autorisés</option>
+                            <option value="anxBanned" >Non autorisés</option>
+                    </div>
+                    <p>Autres :</p>
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input" id="autresPrefInput">
+                        <label for="autresPrefInput" class="form-check-label">Écouter de la musique pendant le trajet</label>
+                    </div>
+                  </form>
+            </div>
+            <!--Bouton qui enclenche une modal pour modifier les informations de l'utilisateur-->
+            <div class="pb-3">
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#editmodal">Modifier mes informations</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--La modal-->
+<div class="modal fade" id="editmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modifier mes informations</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+                <label for="vehiculeInput" class="form-label">Véhicule :</label>
+                <input type="text" class="form-control" id="vehiculeInput">
+            </div>
+            <div class="mb-3">
+                <label for="plaqueInput" class="form-label">Plaque d'immatriculation :</label>
+                <input type="text" class="form-control" id="plaqueInput">
+            </div>
+            <div class="mb-3">
+                <label for="dateImmatInput" class="form-label">Date de première immatriculation :</label>
+                <input type="date" class="form-control" id="dateImmatInput">
+            </div>
+            <div class="mb-3">
+                <label for="placesDispInput" class="form-label">Nombre de places disponnibles :</label>
+                <input type="number" class="form-control" id="placesDispInput" min="1" max="5">
+            </div>
+            <div class="mb-3">
+                <input type="radio" class="form-check-input" id="fumeursInput">
+                <label for="fumeursInput" class="form-check-label">Fumeurs autorisés</label>
+            </div>
+            <div class="mb-3">
+                <input type="radio" class="form-check-input" id="animauxInput">
+                <label for="animauxInput" class="form-check-label">Animaux autorisés</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-primary" id="saveInfo">Sauvegarder mes changements</button>
+        </div>
+      </div>
+    </div>
+  </div>

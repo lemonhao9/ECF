@@ -1,0 +1,72 @@
+<div class="hero-scene text-center text-secondary">
+    <div class="hero-scene-content">
+        <h1>Mon profil</h1>
+        <p>Partagez la route, Préservez la planète</p>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="card text-center bg-dark">
+        <div>
+            <h2 class="text-secondary">Mes informations</h2>
+        </div>
+        <div>
+            <p>Véhicule:</p><span id="vehicule">Tesla Model 3 Rouge</span>
+            <p>Plaque d'immatriculation</p><span id="plaque">AA-229-AA</span>
+            <p>Date de première immatriculation</p><span id="dateImmat">jj/mm/aaaa</span>
+            <p>Nombre de places disponibles</p><span id="placeDisp">3</span>
+            <p>Préférences</p>
+            <ul>
+                <li id="fumeurs">Fumeurs autorisés</li>
+                <li id="animaux">Animaux autorisés</li>
+                <li id="autrePref">Musique</li>
+            </ul>
+            <!--Bouton qui enclenche une modal pour modifier les informations de l'utilisateur-->
+            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#editmodal">Modifier mes informations</button>
+        </div>
+    </div>
+</div>
+
+<!--La modal-->
+<div class="modal fade" id="editmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modifier mes informations</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+                <label for="vehiculeInput" class="form-label">Véhicule</label>
+                <input type="text" class="form-control" id="vehiculeInput">
+            </div>
+            <div class="mb-3">
+                <label for="plaqueInput" class="form-label">Plaque d'immatriculation</label>
+                <input type="text" class="form-control" id="plaqueInput">
+            </div>
+            <div class="mb-3">
+                <label for="dateImmatInput" class="form-label">Date de première immatriculation</label>
+                <input type="date" class="form-control" id="dateImmatInput">
+            </div>
+            <div class="mb-3">
+                <label for="placesDispInput" class="form-label">Nombre de places disponnibles</label>
+                <input type="number" class="form-control" id="placesDispInput">
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" class="form-check-input" id="fumeursInput">
+                <label for="fumeursInput" class="form-check-label">Fumeurs autorisés</label>
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" class="form-check-input" id="animauxInput">
+                <label for="animauxInput" class="form-check-label">Animaux autorisés</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-primary">Sauvegarder mes changements</button>
+        </div>
+      </div>
+    </div>
+  </div>

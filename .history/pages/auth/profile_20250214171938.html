@@ -5,31 +5,30 @@
     </div>
 </div>
 
-<div class="container p-4  mt-4 mb-4 col-md-6 col-lg-4" data-show="driver passengerDriver">
-    <div class="card text-center bg-dark text-light row justify-content-center mb-5">
+<div class="container p-4 mt-4 mb-4 col-md-6 col-lg-4" data-show="driver passengerDriver">
+    <div class="card text-center bg-dark text-light row justify-content-center ">
         <div>
             <h2 class="text-secondary pt-3">Mes informations</h2>
         </div>
         <div>
+            <div>
                 <form>
-                <div class="p-4">
-                    <div class="mb-3 ms-5 d-flex align-items-center justify-content-start">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
                         <label for="vehiculeInput" class="form-label text-light me-3">Véhicule :</label>
-                        <input type="text" class="form-control w-25 me-3" id="vehiculeInput" readonly>
+                        <input type="text" class="form-control w-50 me-3" id="vehiculeInput" readonly>
                     </div>
-                    <div class="mb-3 ms-5 me-3 d-flex align-items-center justify-content-start">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
                         <label for="plaqueInput" class="form-label text-light">Plaque d'immatriculation :</label>
                         <input type="text" class="form-control w-25 ms-3" id="plaqueInput" placeholder="AA-229-AA" readonly>
                     </div>
-                    <div class="mb-3 ms-5 d-flex align-items-center justify-content-start">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
                         <label for="dateImmatInput" class="form-label text-light">Date de première immatriculation :</label>
                         <input type="date" class="form-control w-25 ms-3" id="dateImmatInput" readonly>
                     </div>
-                    <div class="mb-3 ms-5 d-flex align-items-center justify-content-start">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
                         <label for="placesDispInput" class="form-label text-light">Nombre de places disponibles :</label>
                         <input type="number" class="form-control w-25 ms-3" id="placesDispInput" min="1" max="5" readonly>
                     </div>
-                </div>
                     <div>
                         <h3 class="text-secondary">Mes préférences</h3>
                     </div>
@@ -41,17 +40,14 @@
                         <label for="animauxInput" class="form-check-label">Animaux :</label>
                         <input type="text" class="form-control w-25 ms-3" id="animauxInput" readonly>
                     </div>
-                    <p class="text-secondary">Autres :</p>
+                    <p>Autres :</p>
                     <div class="mb-3">
-                        <input type="checkbox" class="form-check-input" id="musicInput">
-                        <label for="musicInput" class="form-check-label">Écouter de la musique pendant le trajet</label>
-                    </div>
-                    <div class="mb-3">
-                        <input type="checkbox" class="form-check-input" id="speakInput">
-                        <label for="speakInput" class="form-check-label">Discuter pendant le trajet</label>
+                        <input type="checkbox" class="form-check-input" id="autresPrefInput">
+                        <label for="autresPrefInput" class="form-check-label">Écouter de la musique pendant le trajet</label>
                     </div>
                   </form>
-            <!--Bouton qui déclenche une modal pour modifier les informations de l'utilisateur-->
+            </div>
+            <!--Bouton qui enclenche une modal pour modifier les informations de l'utilisateur-->
             <div class="pb-3">
                 <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#editmodal">Modifier mes informations</button>
             </div>
@@ -70,42 +66,34 @@
         <div class="modal-body">
           <form>
             <div class="mb-3 d-flex align-items-center justify-content-center">
-                <label for="editVehiculeInput" class="form-label text-light">Véhicule :</label>
-                <input type="text" class="form-control w-50 ms-3" id="editVehiculeInput">
+                <label for="vehiculeInput" class="form-label text-light">Véhicule :</label>
+                <input type="text" class="form-control w-50 ms-3" id="vehiculeInput">
             </div>
             <div class="mb-3 d-flex align-items-center justify-content-center">
-                <label for="editPlaqueInput" class="form-label text-light">Plaque d'immatriculation :</label>
-                <input type="text" class="form-control w-25 ms-3" id="editPlaqueInput">
+                <label for="plaqueInput" class="form-label text-light">Plaque d'immatriculation :</label>
+                <input type="text" class="form-control w-25 ms-3" id="plaqueInput">
             </div>
             <div class="mb-3 d-flex align-items-center justify-content-center">
-                <label for="editDateImmatInput" class="form-label text-light">Date de première immatriculation :</label>
-                <input type="date" class="form-control w-25 ms-3" id="editDateImmatInput">
+                <label for="dateImmatInput" class="form-label text-light">Date de première immatriculation :</label>
+                <input type="date" class="form-control w-25 ms-3" id="dateImmatInput">
             </div>
             <div class="mb-3 d-flex align-items-center justify-content-center">
-                <label for="editPlacesDispInput" class="form-label text-light">Nombre de places disponibles :</label>
-                <input type="number" class="form-control w-25 ms-3" id="editPlacesDispInput" min="1" max="5">
+                <label for="placesDispInput" class="form-label text-light">Nombre de places disponnibles :</label>
+                <input type="number" class="form-control w-25 ms-3" id="placesDispInput" min="1" max="5">
             </div>
             <div class="mb-3 d-flex align-items-center justify-content-center">
-                <label for="editFumeursInput" class="form-check-label text-light me-3">Fumeurs :</label>
-                        <select name="fumeurs" id="editFumeursInput">
+                <label for="fumeursInput" class="form-check-label text-light me-3">Fumeurs :</label>
+                        <select name="fumeurs" id="fumeursInput">
                             <option value="smokeBanned" >Non autorisés</option>
                             <option value="smokeAuthorised">Autorisés</option>
                         </select> 
             </div>
             <div class="mb-3 d-flex align-items-center justify-content-center">
-                <label for="editAnimauxInput" class="form-check-label text-light me-3">Animaux :</label>
-                        <select name="animaux" id="editAnimauxInput">
+                <label for="animauxInput" class="form-check-label text-light me-3">Animaux :</label>
+                        <select name="animaux" id="animauxInput">
                             <option value="anxBanned" >Non autorisés</option>
                             <option value="anxAuthorised">Autorisés</option>
                         </select>
-            </div>
-            <div class="mb-3">
-                <input type="checkbox" class="form-check-input" id="editMusicInput">
-                <label for="editMusicInput" class="form-check-label text-light">Écouter de la musique pendant le trajet</label>
-            </div>
-            <div class="mb-3">
-                <input type="checkbox" class="form-check-input" id="editSpeakInput">
-                <label for="editSpeakInput" class="form-check-label text-light">Discuter pendant le trajet</label>
             </div>
           </form>
         </div>

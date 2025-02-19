@@ -9,8 +9,8 @@
   <div class="row justify-content-center">
     <aside class="col-12 col-md-4 col-lg-3 aside-container">
       <div class="text-center">
-        <img src="/images/Default_pfp.jpg" alt="Photo de profil" class="profile_pict mb-3 img-fluid rounded-circle" id="profilePict"/>
-        <h4 class="mb-2 username" id="username">Pseudo</h4>
+        <img src="/images/Default_pfp.jpg" alt="Photo de profil" class="profile_pict mb-3 img-fluid rounded-circle"/>
+        <h4 class="mb-2 username">Pseudo</h4>
         <div class="note mb-2">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -19,7 +19,7 @@
           <i class="bi bi-star-half"></i>
           <span>4.5</span>
         </div>
-        <p class="text-muted" id="bioText">
+        <p class="text-muted">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
           odio.
         </p>
@@ -219,12 +219,8 @@
       </div>
       <div class="modal-body">
         <div>
-          <label for="usernameInput" class="form-label text-light">Modifier mon pseudo</label>
-          <input type="text" id="usernameInput" class="form-control w-auto">
-        </div>
-        <div>
           <label for="pdpInput" class="form-label text-light">Modifier ma photo de profil</label>
-          <input type="file" class="form-control-file" id="pdpInput" accept="image/*"/>
+          <input type="file" class="form-control-file" id="pdpInput"/>
         </div>
         <div>
           <label for="bioInput" class="form-label text-light">Modifier ma Bio</label>
@@ -233,7 +229,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-        <button type="button" class="btn bg-dark text-light" id="saveEdit" data-bs-dismiss="modal">Sauvegarder mes changements</button>
+        <button type="button" class="btn btn-primary" id="saveEdit">Sauvegarder mes changements/button>
       </div>
     </div>
   </div>

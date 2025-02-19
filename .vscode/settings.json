@@ -1,0 +1,32 @@
+{
+    "prettier.semi": false,
+    "prettier.bracketSpacing": true,
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "beautify.language": {
+
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html"
+        ]
+    },
+    "prettier.bracketSameLine": true,
+    "prettier.proseWrap": "preserve",
+    "prettier.singleAttributePerLine": false,
+    "prettier.useTabs": false
+}

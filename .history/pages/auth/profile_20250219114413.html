@@ -1,0 +1,203 @@
+<div class="hero-scene text-center text-secondary">
+  <div class="hero-scene-content">
+    <h1>Mon profil</h1>
+    <p>Partagez la route, Préservez la planète</p>
+  </div>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <aside class="col-12 col-md-4 col-lg-3 aside container">
+      <div class="text-center">
+        <img src="/images/Default_pfp.jpg" alt="Photo de profil" class="profile_pict mb-3 img-fluid"/>
+        <h4 class="mb-2 username">Pseudo</h4>
+        <div class="note mb-2">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+          <span>4.5</span>
+        </div>
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio.
+        </p>
+        <a href="/historiqueCovoit">Historique des covoiturages</a>
+        <br />
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalEdition">Editer mon profil</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<div class="container col-12 col-md-8 col-lg-6 pt-3 p-4 mt-2 mb-2" data-show="driver passengerDriver"></div>
+  <div class="card text-center bg-dark text-light row justify-content-center mb-5">
+    <div>
+      <h2 class="text-secondary pt-3">Mes informations</h2>
+    </div>
+    <div>
+      <form>
+        <div class="mb-3 d-flex align-items-center justify-content-center">
+          <label for="vehiculeInput" class="form-label text-light me-3">Véhicule :</label>
+          <input type="text" class="form-control w-auto me-3" id="vehiculeInput" readonly/>
+        </div>
+        <div class="mb-3 d-flex align-items-center justify-content-center">
+          <label for="plaqueInput" class="form-label text-light">Plaque d'immatriculation :</label>
+          <input type="text" class="form-control w-25 ms-3" id="plaqueInput" placeholder="AA-229-AA" readonly/>
+        </div>
+        <div class="mb-3 d-flex align-items-center justify-content-center">
+          <label for="dateImmatInput" class="form-label text-light">Date de première immatriculation :</label>
+          <input type="date" class="form-control w-auto ms-3" id="dateImmatInput" readonly/>
+        </div>
+        <div class="mb-3 ms-5 d-flex align-items-center justify-content-center">
+          <label for="placesDispInput" class="form-label text-light">Nombre de places disponibles :</label>
+          <input type="number" class="form-control w-auto ms-3" id="placesDispInput" min="1" max="3"readonly/>
+        </div>
+        <div>
+          <h3 class="text-secondary">Mes préférences</h3>
+        </div>
+        <div class="mb-3 d-flex align-items-center justify-content-center">
+          <label for="fumeursInput" class="form-check-label">Fumeurs :</label>
+          <input type="text" class="form-control w-auto ms-3" id="fumeursInput" readonly/>
+        </div>
+        <div class="mb-3 d-flex align-items-center justify-content-center">
+          <label for="animauxInput" class="form-check-label">Animaux :</label>
+          <input type="text" class="form-control w-auto ms-3" id="animauxInput" readonly/>
+        </div>
+        <p class="text-secondary">Autres :</p>
+        <div class="mb-3">
+          <input type="checkbox" class="form-check-input" id="musicInput" />
+          <label for="musicInput" class="form-check-label">Écouter de la musique pendant le trajet</label>
+        </div>
+        <div class="mb-3">
+          <input type="checkbox" class="form-check-input" id="speakInput" />
+          <label for="speakInput" class="form-check-label">Discuter pendant le trajet</label>
+        </div>
+      </form>
+      <!--Bouton qui déclenche une modal pour modifier les informations de l'utilisateur-->
+      <div class="pb-3">
+        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#editmodal">Modifier mes informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container col-12 col-md-8 col-lg-6 p-4 mb-4" data-show="driver  passengerDriver">
+  <div class="card text-center bg-dark text-light row justify-content-center mb-5">
+    <h2 class="text-secondary pt-3">Proposer un voyage</h2>
+    <form>
+      <div class="mb-3 d-flex align-items-center justify-content-center">
+        <label for="departInfoInput" class="form-label text-light">Départ :</label>
+        <input type="text" class="form-control w-auto ms-3" id="departInfoInput"/>
+      </div>
+      <div class="mb-3 d-flex align-items-center justify-content-center">
+        <label for="arriveeInfoInput" class="form-label text-light">Arrivée :</label>
+        <input type="text" class="form-control w-auto ms-3" id="arriveeInfoInput"/>
+      </div>
+      <div class="mb-3 d-flex align-items-center justify-content-center">
+        <label for="dateDepartInput" class="form-label text-light">Quand partir :</label>
+        <input type="date" class="form-control w-auto ms-1" id="dateDepartInput"/>
+        <input type="time" class="form-control w-auto ms-1" id="dateDepartInput"/>
+      </div>
+      <div class="mb-3 d-flex align-items-center justify-content-center">
+        <label for="placeDispoInput" class="form-label text-light">Nombre de place disponnible :</label>
+        <input type="number"class="form-control w-auto ms-3" id="placeDispoInput" min="1" max="3"/>
+      </div>
+      <div class="mb-2 d-flex align-items-center justify-content-center">
+        <label for="prixInput" class="form-label text-light">Prix du covoiturage :</label>
+        <input type="number" class="form-control ms-3" id="prixInput" min="2" aria-describedby="creditsInfo"/>
+      </div>
+      <div id="creditsInfo" class="form-text text-light w-auto pb-3">
+        <small>À considérer que 2 crédits<br/>sont pour EcoRide afin de garantir les maintenances.
+        </small>
+      </div>
+    </form>
+    <div class="pb-3">
+      <button class="btn btn-secondary">Publier mon voyage</button>
+    </div>
+  </div>
+</div>
+
+<!--La modal de modification d'informations driver/passengerDriver -->
+<div class="modal fade" id="editmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-black">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-secondary" id="staticBackdropLabel">Modifier mes informations</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3 d-flex align-items-center justify-content-center">
+            <label for="editVehiculeInput" class="form-label text-light">Véhicule :</label>
+            <input type="text" class="form-control w-50 ms-3" id="editVehiculeInput" />
+          </div>
+          <div class="mb-3 d-flex align-items-center justify-content-center">
+            <label for="editPlaqueInput" class="form-label text-light">Plaque d'immatriculation :</label>
+            <input type="text" class="form-control w-25 ms-3" id="editPlaqueInput"/>
+          </div>
+          <div class="mb-3 d-flex align-items-center justify-content-center">
+            <label for="editDateImmatInput" class="form-label text-light">Date de première immatriculation :</label>
+            <input type="date" class="form-control w-25 ms-3" id="editDateImmatInput" />
+          </div>
+          <div class="mb-3 d-flex align-items-center justify-content-center">
+            <label for="editPlacesDispInput" class="form-label text-light">Nombre de places disponibles :</label>
+            <input type="number" class="form-control w-25 ms-3" id="editPlacesDispInput" min="1" max="3"/>
+          </div>
+          <div class="mb-3 d-flex align-items-center justify-content-center">
+            <label for="editFumeursInput" class="form-check-label text-light me-3">Fumeurs :</label>
+            <select name="fumeurs" id="editFumeursInput">
+              <option value="smokeBanned">Non autorisés</option>
+              <option value="smokeAuthorised">Autorisés</option>
+            </select>
+          </div>
+          <div class="mb-3 d-flex align-items-center justify-content-center">
+            <label for="editAnimauxInput" class="form-check-label text-light me-3">Animaux :</label>
+            <select name="animaux" id="editAnimauxInput">
+              <option value="anxBanned">Non autorisés</option>
+              <option value="anxAuthorised">Autorisés</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="checkbox" class="form-check-input" id="editMusicInput"/>
+            <label for="editMusicInput" class="form-check-label text-light">Écouter de la musique pendant le trajet</label>
+          </div>
+          <div class="mb-3">
+            <input type="checkbox" class="form-check-input" id="editSpeakInput"/>
+            <label for="editSpeakInput" class="form-check-label text-light">Discuter pendant le trajet</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" id="saveInfo">Sauvegarder mes changements</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--La modal de modification info profil-->
+<div class="modal fade" id="modalEdition" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-primary">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-secondary" id="staticBackdropLabel">Éditer mon profil</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <label for="pdpInput" class="form-label text-light">Modifier ma photo de profil</label>
+          <input type="file" class="form-control-file" id="pdpInput"/>
+        </div>
+        <div>
+          <label for="bioInput" class="form-label text-light">Modifier ma Bio</label>
+          <input type="textarea" id="bioInput" class="form-text"/>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" id="saveInfo">Sauvegarder mes changements/button>
+      </div>
+    </div>
+  </div>
+</div>

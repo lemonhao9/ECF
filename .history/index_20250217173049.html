@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/main.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>EcoRide</title>
+</head>
+<body>
+
+    <header>
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="light">
+  <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/images/ECORIDElogov2-Photoroom.png" class="img-fluid" alt="logo EcoRide" width="60px"height="50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+        </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-center w-100">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Trouver un itinéraire" aria-label="Search">
+              <button class="btn btn-outline-success bg-secondary text-black" type="submit">Rechercher</button>
+            </form>
+          </div>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="/">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="/formCovoit">Covoiturages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary text-nowrap" href="/profile" data-show="user">Mon profil</a>
+        </li>
+        <li class="nav-item" data-show="disconnected">
+            <a class="nav-link text-secondary" href="/login">Connexion</a>
+          </li>
+          <li class="nav-item"data-show="connected">
+            <button class="nav-link text-secondary rounded" id="signout-btn">Déconnexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="mailto:Ecoride@contact.com">Contact</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+
+    <main id="main-page">
+        <!-- Injection du contenu des différentes pages-->
+    </main>
+    <footer class="bg-primary text-center footer pt-3">
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="text-secondary">Mentions légales</a>
+            </div>
+            <div class="col-6">
+                <a href="mailto:Ecoride@contact.com" class="text-white">Ecoride@contact.com</a>
+            </div>
+            <div class="col-6 text-secondary">
+                <h3>Partagez la route, Préservez la planète</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="./Router/router.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

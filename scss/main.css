@@ -12079,4 +12079,16 @@ p {
   text-decoration: none;
   padding: 10px;
   background-color: #584832;
+}
+
+.profile_pict {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bi {
+  color: #ffc107;
 }/*# sourceMappingURL=main.css.map */

@@ -17,7 +17,6 @@ jobs:
         protocol: ftps
         security: "strict"
         port: 21
-        local-dir: ./dist
         server-dir: /www/
         exclude: |
           **/.git*

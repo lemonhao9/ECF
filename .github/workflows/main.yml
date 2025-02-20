@@ -17,6 +17,7 @@ jobs:
         protocol: ftps
         port: 21
         server-dir: /www/
+        passive: true
         exclude: |
           **/.git*
           **/.git*/**

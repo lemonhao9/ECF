@@ -15,7 +15,6 @@ jobs:
         username: ecoridecovoiturage
         password: ${{ secrets.ftp_password }}
         protocol: ftps
-        security: "strict"
         port: 21
         server-dir: /www/
         exclude: |

@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ssh-ecoridecovoiturage.alwaysdata.net
+        server: sftp://ssh-ecoridecovoiturage.alwaysdata.net
         username: ecoridecovoiturage
         password: ${{ secrets.ftp_password }}
         protocol: ftps
